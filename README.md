@@ -1,8 +1,13 @@
 [![GitHub version](https://badge.fury.io/gh/SIMAM77%2Fprojet-meteor-react.svg)](https://badge.fury.io/gh/SIMAM77%2Fprojet-meteor-react)
+#### NPM
 [![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
+#### REACT
 [![npm version](https://badge.fury.io/js/react.svg)](https://badge.fury.io/js/react)
+#### METEOR
 [![npm version](https://badge.fury.io/js/meteor.svg)](https://badge.fury.io/js/meteor)
+#### ANTD 
 [![npm version](https://badge.fury.io/js/antd.svg)](https://badge.fury.io/js/antd)
+#### BABEL-RUNTIME
 [![npm version](https://badge.fury.io/js/babel-runtime.svg)](https://badge.fury.io/js/babel-runtime)
 
 # METEOR - AVEC REACT.JS
