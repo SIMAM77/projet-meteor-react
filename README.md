@@ -1,6 +1,9 @@
-[![devDependencies](https://david-dm.org/SIMAM77/projet-meteor-react/dev-status.svg)]()
-[![dependencies](https://david-dm.org/SIMAN77/projet-meteor-react.svg)]()
-[![dependencies](https://travis-ci.org/SIMAN77/projet-meteor-react.png?branch=feature/header_component-list_component)]()
+[![GitHub version](https://badge.fury.io/gh/SIMAM77%2Fprojet-meteor-react.svg)](https://badge.fury.io/gh/SIMAM77%2Fprojet-meteor-react)
+[![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm)
+[![npm version](https://badge.fury.io/js/react.svg)](https://badge.fury.io/js/react)
+[![npm version](https://badge.fury.io/js/meteor.svg)](https://badge.fury.io/js/meteor)
+[![npm version](https://badge.fury.io/js/antd.svg)](https://badge.fury.io/js/antd)
+[![npm version](https://badge.fury.io/js/babel-runtime.svg)](https://badge.fury.io/js/babel-runtime)
 
 # METEOR - AVEC REACT.JS
 
