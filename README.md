@@ -1,4 +1,6 @@
-[![status](https://david-dm.org/SIMAM77/projet-meteor-react/dev-status.svg)]()
+[![devDependencies](https://david-dm.org/SIMAM77/projet-meteor-react/dev-status.svg)]()
+[![dependencies](https://david-dm.org/SIMAN77/projet-meteor-react.svg)]()
+[![dependencies](https://travis-ci.org/SIMAN77/projet-meteor-react.png?branch=feature/header_component-list_component)]()
 
 # METEOR - AVEC REACT.JS
 
