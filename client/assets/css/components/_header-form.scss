@@ -1,0 +1,55 @@
+.header-form {
+  width: 50%;
+  padding-bottom: 3%;
+  margin: rem(30) auto;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: rem(0);
+    width: 70%;
+    height: rem(1);
+    background-color: $grey-light;
+    transform: translateX(-50%);
+  }
+}
+.header-form-title {
+  text-align: center;
+}
+.form-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.form-field {
+  width: 50%;
+  padding: rem(10) rem(10);
+}
+.form-field.submit {
+  width: 60%;
+}
+.form-field-select {
+  font-family: "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  padding: rem(4) rem(11);
+  width: 100%;
+  height: rem(32);
+  font-size: rem(14);
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: $white;
+  background-image: none;
+  border: rem(1) solid #d9d9d9;
+  border-radius: 4px;
+  transition: all .3s;
+  .option {
+    color: #BFBFBF;
+  }
+}
