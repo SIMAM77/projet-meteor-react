@@ -1,0 +1,6 @@
+@function rem($pxval) {
+  @return ($pxval / $pxbase) * 1rem;
+}
+@function em($pxval) {
+  @return ($pxval / $pxbase) * 1em;
+}

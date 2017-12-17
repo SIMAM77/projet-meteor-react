@@ -1,0 +1,31 @@
+.header-form {
+  width: 30%;
+  margin: auto;
+}
+.header-form-title {
+  text-align: center;
+  padding: rem(20) 0;
+}
+.header-form-items {
+  position: relative;
+  padding-bottom: rem(20);
+}
+.header-form-error {
+  position: absolute;
+  left: 0;
+  bottom: rem(15);
+  width: 100%;
+  color: $red;
+  overflow: hidden;
+  font-size: rem(12);
+  transition: .10s ease-in-out;
+}
+.header-form-error.is-active {
+  bottom: 0;
+  transition: .10s ease-in-out;
+}
+.header-form-input {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}

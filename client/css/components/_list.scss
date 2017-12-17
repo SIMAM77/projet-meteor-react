@@ -1,0 +1,33 @@
+.list-container {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  @include tablet {
+    flex-flow: column wrap;
+    width: 80%;
+  }
+}
+.list-select {
+  text-align: right;
+  padding: rem(30) 0;
+}
+.list-content {
+  display: flex;
+  flex-flow: column wrap;
+  @include tablet {
+    flex-flow: row wrap;
+  }
+}
+.list-items {
+  margin-right: 1%;
+  width: 80%;
+  margin: auto;
+  @include tablet {
+    width: 25%;
+  }
+}
+option[value] {
+  color: #BFBFBF;
+}
