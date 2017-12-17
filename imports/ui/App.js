@@ -17,9 +17,10 @@ class App extends Component {
         super(props);
         this._createBounds();
         this.state = {
-            value: 'a',
-            valueLetter: ''
-        }
+            value: 'Tri alphabetique',
+            valueLetter: '',
+            arr: this._arr = []
+        };
 
     }
 
@@ -33,17 +34,9 @@ class App extends Component {
         for (let i = 0; i < this.props.firstLetter.length; i++) {
             let firstLetter = this.props.firstLetter[i].name[0];
             if (firstLetter.toLowerCase() === event.target.value.toLowerCase()) {
-
-                /*
-                *
-                * ICI LE RESULTAT DU TRI
-                *
-                * A REGLER
-                *
-                * */
-
+                this._arr.push(this.props.firstLetter[i]);
+                this.setState({arr: this._arr});
             }
-
         }
     }
 
@@ -53,6 +46,7 @@ class App extends Component {
         const name = ReactDOM.findDOMNode(this._name).value.trim();
         const surname = ReactDOM.findDOMNode(this._surname).value.trim();
         const email = ReactDOM.findDOMNode(this._email).value.trim();
+        const select = ReactDOM.findDOMNode(this._submitSelect).value.trim();
 
 
         if (name && surname && email !== '') {
@@ -60,6 +54,7 @@ class App extends Component {
                 name,
                 surname,
                 email,
+                select
             });
 
             for (let i = 0; i < handleError.length; i++) {
@@ -75,13 +70,21 @@ class App extends Component {
         ReactDOM.findDOMNode(this._name).value = '';
         ReactDOM.findDOMNode(this._surname).value = '';
         ReactDOM.findDOMNode(this._email).value = '';
-        console.log(this.state);
     }
 
     _renderTasks() {
-        return this.props.tasks.map((task) => (
-            <Task key={task._id} task={task} class="list-items"/>
-        ));
+        if (this._arr.length > 0) {
+
+            this._arr = [];
+
+            return this.state.arr.map((task) => (
+                <Task key={task._id} task={task} class="list-items"/>
+            ));
+        } else {
+            return this.props.tasks.map((task) => (
+                <Task key={task._id} task={task} class="list-items"/>
+            ));
+        }
     }
 
     render() {
@@ -128,6 +131,21 @@ class App extends Component {
                             />
                             <span className="header-form-error">Veuillez entrer une valeur</span>
                         </div>
+                        <div className="header-form-items">
+                            <select className="ant-input header-form-select"
+                                    ref={ref => {
+                                        this._submitSelect = ref
+                                    }}
+                            >
+                                <option value="HTML">HTML</option>
+                                <option value="CSS">CSS</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="PHP">PHP</option>
+                                <option value="MYSQL">MYSQL</option>
+
+                            </select>
+                            <span className="header-form-error">Veuillez entrer une valeur</span>
+                        </div>
                         <Input
                             type="submit"
                             value="Envoyer"
@@ -140,14 +158,11 @@ class App extends Component {
                     <div className="list-select">
                         <select
                             onChange={this._handleChange}
-                            className="ant-input selectBox"
-                            style={{width: 200}}
-                            placeholder="Select a person"
-                            ref={ref => {
-                                this._select = ref
-                            }}
+                            className="ant-input"
+                            style={{width: 300}}
                             value={this.state.value}
                         >
+                            <option value="tri alphabetique">Tri alphabetique</option>
                             <option value="a">A</option>
                             <option value="b">B</option>
                             <option value="c">C</option>

@@ -10,8 +10,12 @@
   }
 }
 .list-select {
+  width: 100%;
   text-align: right;
   padding: rem(30) 0;
+}
+.list-selectBox {
+  width: rem(300);
 }
 .list-content {
   display: flex;
@@ -22,12 +26,10 @@
 }
 .list-items {
   margin-right: 1%;
+  margin-left: auto;
   width: 80%;
-  margin: auto;
+  transition: .25s ease-in-out;
   @include tablet {
     width: 25%;
   }
-}
-option[value] {
-  color: #BFBFBF;
 }

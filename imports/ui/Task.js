@@ -32,6 +32,7 @@ export default class Task extends Component {
             <p>{this.props.task.name}</p>
             <p>{this.props.task.surname}</p>
             <p>{this.props.task.email}</p>
+            <p>{this.props.task.select}</p>
         </Card>
         );
     }
